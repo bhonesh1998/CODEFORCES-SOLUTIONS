@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+//using namespace std;
+#define pf printf
+#define sf scanf
+#define z long long int
+int main() {
+  double x,y;
+  sf("%lf%lf",&x,&y);
+  double x1,x2;
+  x1 = y *log(x);
+  x2 = x *log(y);
+  // pf("%lf %lf",x1,x2);
+  if (x1<x2)
+  pf("<");
+  else if (x1>x2)
+  pf(">");
+  else
+  pf("=");
+
+    return 0;
+}
