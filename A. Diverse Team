@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define pf printf
+#define sf scanf
+#define z long long int
+int  main()
+{
+
+  set<int> s;
+  set<int> :: iterator it ;
+  int i,n , k ;
+  sf("%d%d",&n,&k); int a[n];
+  for(i=0;i<n;i++)
+      {
+        sf("%d",&a[i]);
+        if(s.size()!=k)
+        s.insert(a[i]);
+
+      }
+      // pf("ch %d\n",s.size());
+      // for(it=s.begin();it!=s.end();it++)
+      //   {
+      //       pf("ch %d \n",*it);
+      //   }
+      if(s.size()==k)
+        {
+            pf("YES\n");
+            for(it=s.begin();it!=s.end();it++)
+              {
+                  for(i=0;i<n;i++)
+                    {
+                      if(a[i]== (*it) ) { pf("%d ",i+1); break;}
+                    }
+              }
+        }
+        else
+        pf("NO");
+
+return 0;
+}
