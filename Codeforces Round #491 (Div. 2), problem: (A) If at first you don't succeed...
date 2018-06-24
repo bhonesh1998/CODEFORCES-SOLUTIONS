@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#define pf printf
+#define sf scanf
+#define db double 
+#define z long long int 
+using namespace std;
+
+
+
+int main()
+{
+   int a , b , c , n;
+   sf("%d%d%d%d",&a,&b,&c,&n);
+   int ans = n-(a+b-c);
+
+    if(ans>0 &&  a>=c && b>=c && ans <=n )
+        pf("%d",ans);
+    else
+        pf("-1");
+
+
+   }
