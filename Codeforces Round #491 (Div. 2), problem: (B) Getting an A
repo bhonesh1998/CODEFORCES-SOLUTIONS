@@ -1,0 +1,61 @@
+#include<bits/stdc++.h>
+#define pf printf
+#define sf scanf
+#define db double 
+#define z long long int 
+using namespace std;
+int main()
+{
+   int n;
+   sf("%d",&n);
+   db a[n];
+   int i,j ;
+   for(i=0;i<n;i++)
+        sf("%lf",&a[i]);
+   sort(a,a+n);
+
+int c=0;
+        db ss =0;
+
+        for(j=0;j<n;j++)
+        {
+                ss+=a[j];
+        }
+        db aa= ss/(db)n;
+
+         if(aa>=4.5) 
+                {
+                        pf("%d",c); 
+                        return 0;
+                }
+
+                else 
+                    {c++;}
+
+    
+    for(i=0;i<n;i++)
+    {
+
+
+
+                a[i]=5;
+                db ss=0;
+        for(j=0;j<n;j++)
+        {
+                ss+=a[j];
+        }
+        db aa= ss/(db)n;
+
+                if(aa>=4.5) 
+                {
+                        pf("%d",c); 
+                        break;
+                }
+
+                else 
+                    {c++;}
+
+    }
+
+           
+   }
