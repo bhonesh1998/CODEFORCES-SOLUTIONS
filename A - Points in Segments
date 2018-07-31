@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+#define pf printf
+#define sf scanf
+#define db double 
+#define z long long int 
+using namespace std ;
+#define siz 100001
+#define mod 1000000007
+int main()
+{ 
+
+  
+      z t,k,i;
+      sf("%lld%lld",&t,&k);
+      z p=0;
+         z h[siz]={0};
+         h[0]=1000;
+      while(t--)
+      {
+     
+        vector<z> v;
+        z l,r;
+        sf("%lld%lld",&l,&r);
+        for(i=l;i<=r;i++)
+          h[i]++;
+        
+
+
+      }
+      for(i=1;i<=k;i++)
+        {
+            if(h[i]==0)
+              p++;
+        }
+
+      cout << p <<endl;
+      for(i=1;i<=k;i++)
+        {
+            if(h[i]==0)
+              cout <<i<<" ";
+        }
+
+
+}
